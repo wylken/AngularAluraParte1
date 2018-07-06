@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+                <input #inputFiltroFoto (keyup)="0" type="text" class="form-control" placeholder="Digite para filtrar imagem">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <card *ngFor="let foto of fotos | filtroPorTitulo:inputFiltroFoto.value" titulo={{foto.titulo}} class="col-md-2">
+            <foto url="{{foto.url}}" titulo="{{foto.titulo}}"></foto>
+        </card>
+    </div>
+</div>
