@@ -8,11 +8,11 @@ import {ListagemComponent} from "./listagem/listagem.component";
 import {CadastroComponent} from "./cadastro/cadastro.component";
 import {routing} from "./app.routes";
 import {FiltroPorTitulo} from "./listagem/listagem.pipes"
-import {FormsModule} from "@angular/forms"
+import {FormsModule, ReactiveFormsModule} from "@angular/forms"
 
 
 @NgModule({
-    imports: [BrowserModule, FotoModule, HttpModule, routing, FormsModule],
+    imports: [BrowserModule, FotoModule, HttpModule, routing, FormsModule, ReactiveFormsModule],
     declarations: [AppComponent, CardComponent, ListagemComponent, CadastroComponent, FiltroPorTitulo],
     bootstrap: [AppComponent]
 })
